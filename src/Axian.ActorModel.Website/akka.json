@@ -1,0 +1,6 @@
+{
+  "name": "ffthh",
+  "akka": {
+    "loglevel": "DEBUG"
+  }
+}
