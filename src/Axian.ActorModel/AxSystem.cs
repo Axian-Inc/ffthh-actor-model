@@ -16,20 +16,26 @@ namespace Axian.ActorModel
                 name = config.GetString("name");
 
             // TODO: Create an ActorSystem
+            ActorSystem sys = ActorSystem.Create(name, config);
 
-            return null;
+            return new AxSystem(sys);
         }
 
         private AxSystem(ActorSystem sys)
         {
             Sys = sys ?? throw new ArgumentNullException(nameof(sys));
+
+            BinManager = Sys.ActorOf<BinManager>("bin");
         }
 
         public ActorSystem Sys { get; }
 
+        public IActorRef BinManager { get; }
+
         public void Terminate()
         {
             // TODO: Terminate the ActorSystem and wait for it to stop.
+            Sys.Terminate().Wait();
         }
     }
 }
