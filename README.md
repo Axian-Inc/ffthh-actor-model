@@ -346,7 +346,7 @@ Let's create HTTP request capture app, a simplistic clone of [postb.in](https://
 Run the following git command to get a starting point.
 
 ```
-git cherry-pick lesson1
+git cherry-pick origin/lesson1
 ```
 
 This adds the `Bin` and `BinManager` classes to the `Axian.ActorModel` project and some predefined tests to help guide you through the process of building the http request capture system.
