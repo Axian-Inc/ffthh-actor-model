@@ -18,15 +18,15 @@ An HTTP test tool your comfortable using (e.g. curl, Postman).
 
 Clone or fork this git repository.
 
-`https://github.com/Cobster/Axian.ActorModel.git`
+`https://github.com/Axian-Inc/ffthh-actor-model.git`
 
 
 
-This solution consists of 4 projects.
+This solution consists of 3 projects.
 
 - **Axian.ActorModel**: In this main project you'll be working with Akka.NET
 - **Axian.ActorModel.Tests**: This contains some predefined tests to verify things are running smoothly.
-- **Axian.ActorModel.Website**: A simple ASP.NET Core Web API for some I/O.
+- **Axian.ActorModel.Website**: A simple ASP.NET Core web API.
 
 **Install the Akka.NET nuget packages**
 
